@@ -81,8 +81,13 @@
         revealObserver.unobserve(entry.target);
       });
     }, { threshold: 0.11, rootMargin: '0px 0px -30px 0px' });
+
+    // The page is fully visible by default. We only hide items after JavaScript
+    // is confirmed to be running, so a missing/blocked script can never make
+    // the portfolio appear empty.
     reveals.forEach((item, index) => {
       item.style.transitionDelay = `${Math.min((index % 4) * 55, 165)}ms`;
+      item.classList.add('reveal-ready');
       revealObserver.observe(item);
     });
   }
