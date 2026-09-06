@@ -92,3 +92,8 @@ No npm, build step, backend, or framework is required.
 - Added the IEEE Sponsorship Leader image.
 - Swapped the Sponsorship Leader and CTC Arduino Instructor timeline positions.
 - Includes all prior v5 layout/mobile fixes.
+
+
+## v7 mobile card fix
+- PawDoku now uses the exact same published-game image ratio/behavior as OrbiX and Risky Landing on phones.
+- Updated social preview image and cache version.

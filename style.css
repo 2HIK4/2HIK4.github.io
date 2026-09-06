@@ -423,16 +423,21 @@ button { color: inherit; }
   }
   .game-card-body { padding: 22px; }
 
-  /* PawDoku uses a wide cover; show the full artwork on phones instead of cropping it. */
+  /* Keep PawDoku's published-game card identical to OrbiX/Risky Landing on phones. */
   .game-card-pawdoku .game-art {
-    aspect-ratio: auto;
+    width: 100%;
+    height: auto !important;
+    aspect-ratio: 16 / 10 !important;
+    overflow: hidden;
     background: #0b1827;
   }
   .game-card-pawdoku .game-art img {
-    width: 100%;
-    height: auto;
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
     max-height: none;
-    object-fit: contain;
+    object-fit: cover !important;
+    object-position: center center;
   }
 
   .equation-visual {
