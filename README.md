@@ -86,3 +86,9 @@ The phone number is marked with an HTML comment in `index.html`. To remove it fr
 6. Visit `https://2hik4.github.io/` after deployment finishes.
 
 No npm, build step, backend, or framework is required.
+
+
+## v6 update
+- Added the IEEE Sponsorship Leader image.
+- Swapped the Sponsorship Leader and CTC Arduino Instructor timeline positions.
+- Includes all prior v5 layout/mobile fixes.

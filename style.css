@@ -312,3 +312,136 @@ button { color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}.orbit-two{animation:none}.workspace-card{animation:none}
 }
+
+
+/* ===== v5 layout refinements ===== */
+/* Keep gradient text glyphs from being clipped by tight inline bounds. */
+.hero h1 {
+  overflow: visible;
+  letter-spacing: -.055em;
+}
+.hero h1 span {
+  display: inline-block;
+  overflow: visible;
+  padding-inline: .075em;
+  margin-inline: -.075em;
+  padding-block: .05em;
+}
+
+/* The equation visual uses flex, so explicitly center both axes. */
+.equation-visual {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.equation-visual > span,
+.equation-visual > strong {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.equation-visual i { flex: 0 0 auto; }
+
+/* Make the published-games area resistant to text/card overflow. */
+.published-header,
+.published-header > div,
+.game-cards,
+.game-card,
+.game-art,
+.game-card-body {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+.published-header h2,
+.published-header p {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* Tablet/phone: use the same stacked card layout for all three games.
+   This removes the special two-column PawDoku card that could show only its image. */
+@media (max-width: 880px) {
+  .game-cards { grid-template-columns: 1fr; }
+  .game-card-pawdoku {
+    grid-column: auto;
+    display: block;
+  }
+  .game-card-pawdoku .game-art {
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 620px) {
+  /* A deliberate phone gutter so text never hugs the screen edge. */
+  .shell {
+    width: calc(100% - 40px);
+    max-width: var(--max-width);
+  }
+
+  .nav-menu {
+    left: 20px;
+    right: 20px;
+    max-width: none;
+  }
+
+  /* Large section headings should wrap instead of being clipped. */
+  .section-heading h2,
+  .published-header h2 {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(2.15rem, 10.5vw, 3rem);
+    line-height: 1.04;
+    letter-spacing: -.045em;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+  .published-header p,
+  .section-heading > p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 13vw, 4.8rem);
+    letter-spacing: -.045em;
+    line-height: .96;
+  }
+
+  .game-card,
+  .game-card-pawdoku {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .game-art {
+    width: 100%;
+    max-width: 100%;
+  }
+  .game-card-body { padding: 22px; }
+
+  /* PawDoku uses a wide cover; show the full artwork on phones instead of cropping it. */
+  .game-card-pawdoku .game-art {
+    aspect-ratio: auto;
+    background: #0b1827;
+  }
+  .game-card-pawdoku .game-art img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+  }
+
+  .equation-visual {
+    min-height: 250px;
+    padding-inline: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .shell { width: calc(100% - 32px); }
+  .hero h1 { font-size: clamp(2.75rem, 12.8vw, 4rem); }
+}
