@@ -1,15 +1,16 @@
-Hussam Alkhatib — Portfolio
+# Hussam Alkhatib — Portfolio
 
-Static GitHub Pages portfolio built with HTML, CSS and vanilla JavaScript.
+Static GitHub Pages portfolio built with **HTML, CSS and vanilla JavaScript**.
 
-Live URL
+## Live URL
 
-After pushing these files to the root of the 2HIK4.github.io repository:
+After pushing these files to the root of the `2HIK4.github.io` repository:
 
-https://2hik4.github.io/
+`https://2hik4.github.io/`
 
-Files
+## Files
 
+```text
 /
 ├── index.html
 ├── style.css
@@ -42,63 +43,46 @@ Files
         ├── ieee-training.jpg
         ├── social-preview.png
         └── linkedin-banner-reference.png
+```
 
-Images already included
+## Images already included
 
 The first version uses images/screenshots supplied in the conversation for:
 
-PawDoku
-
-OrbiX
-
-Risky Landing
-
-Unity project/prototype folders
-
-TCRT24 award
-
-CTC training
-
-IEEE Arduino training
+- PawDoku
+- OrbiX
+- Risky Landing
+- Unity project/prototype folders
+- TCRT24 award
+- CTC training
+- IEEE Arduino training
 
 You can replace any image later without changing the layout, as long as you keep the same filename.
 
-Images worth replacing later
+## Images worth replacing later
 
 For the strongest final version, replace the temporary/cropped game assets with original high-resolution files:
 
-assets/games/orbix/cover.png — original OrbiX key art
+- `assets/games/orbix/cover.png` — original OrbiX key art
+- `assets/games/orbix/screenshot-1.png` and `screenshot-2.png` — clean gameplay screenshots
+- `assets/games/risky-landing/cover.png` — original Risky Landing key art
+- `assets/games/risky-landing/screenshot-1.png` and `screenshot-2.png` — clean gameplay screenshots
+- `assets/images/tcrt24.jpg` — original award photo rather than a crop from LinkedIn
+- `assets/images/ctc-training.jpg` — original training photo
+- `assets/images/ieee-training.jpg` — original training photo
+- `assets/Hussam-Alkhatib-CV.pdf` — final CV
 
-assets/games/orbix/screenshot-1.png and screenshot-2.png — clean gameplay screenshots
+## Contact details
 
-assets/games/risky-landing/cover.png — original Risky Landing key art
+The phone number is marked with an HTML comment in `index.html`. To remove it from the public website, delete the `<a href="tel:...">...</a>` element directly beneath the `PHONE:` comment.
 
-assets/games/risky-landing/screenshot-1.png and screenshot-2.png — clean gameplay screenshots
+## Publish on GitHub Pages
 
-assets/images/tcrt24.jpg — original award photo rather than a crop from LinkedIn
-
-assets/images/ctc-training.jpg — original training photo
-
-assets/images/ieee-training.jpg — original training photo
-
-assets/Hussam-Alkhatib-CV.pdf — final CV
-
-Contact details
-
-The phone number is marked with an HTML comment in index.html. To remove it from the public website, delete the <a href="tel:...">...</a> element directly beneath the PHONE: comment.
-
-Publish on GitHub Pages
-
-Open your 2HIK4.github.io repository.
-
-Upload/replace the files in the repository root with this project.
-
-Commit the changes to main.
-
-Open Settings → Pages.
-
-Select Deploy from a branch → main → /(root) if it is not already selected.
-
-Visit https://2hik4.github.io/ after deployment finishes.
+1. Open your `2HIK4.github.io` repository.
+2. Upload/replace the files in the repository root with this project.
+3. Commit the changes to `main`.
+4. Open **Settings → Pages**.
+5. Select **Deploy from a branch → main → /(root)** if it is not already selected.
+6. Visit `https://2hik4.github.io/` after deployment finishes.
 
 No npm, build step, backend, or framework is required.
