@@ -24,17 +24,41 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-height) + 26px); }
+
+/* Keep the root canvas dark and locked to the viewport.
+   This prevents white overscroll flashes and tiny horizontal page drift on mobile. */
+html {
+  width: 100%;
+  max-width: 100%;
+  background: #050d17;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-height) + 26px);
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+}
 body {
   margin: 0;
-  min-width: 320px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
   background:
     radial-gradient(circle at 50% -10%, rgba(20, 141, 255, 0.16), transparent 26rem),
     linear-gradient(180deg, #06101c 0%, #07111e 45%, #050d17 100%);
+  background-color: #050d17;
   color: var(--text-primary);
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.65;
   overflow-x: hidden;
+}
+@supports (overflow: clip) {
+  html, body { overflow-x: clip; }
+}
+main, .site-header, .footer, .section {
+  width: 100%;
+  max-width: 100%;
 }
 body.menu-open, body.lightbox-open { overflow: hidden; }
 
@@ -76,6 +100,12 @@ button { color: inherit; }
 }
 
 .shell { width: min(calc(100% - 40px), var(--max-width)); margin-inline: auto; }
+
+/* Grid/flex children can otherwise force a page a few pixels wider than the phone viewport. */
+.hero-grid > *, .featured-layout > *, .game-cards > *, .journey-grid > *,
+.technical-grid > *, .achievement-card > *, .timeline-item > *, .about-grid > *,
+.contact-card > * { min-width: 0; }
+.contact-details a, .about-links a, .card-link { overflow-wrap: anywhere; }
 .section { position: relative; padding: 120px 0; }
 
 .noise {
@@ -268,7 +298,15 @@ button { color: inherit; }
 }
 
 @media (max-width: 620px) {
-  .shell{width:min(calc(100% - 28px),var(--max-width))}.section{padding:78px 0}.hero{padding-top:calc(var(--nav-height) + 54px)}.hero-summary{line-height:1.7}.hero-actions{align-items:stretch}.hero-actions .button{width:100%}.hero-actions .text-link{padding:8px 2px}.hero-visual{min-height:390px}.game-window{width:78%;height:220px;top:80px;right:3%}.code-window{width:58%;height:170px;left:1%;bottom:40px}.game-grid-mini{width:116px;height:116px}.code-lines{padding:13px;font-size:.6rem;gap:6px}.chip-unity{right:24px;top:42px}.chip-csharp{right:0;bottom:70px}.orbit-one{width:300px;height:300px;right:10px;top:48px}.orbit-two{width:220px;height:220px;right:50px;top:89px}.stats{grid-template-columns:1fr 1fr}.stat{min-height:105px;padding:18px}.stat strong{font-size:2.25rem}.stat span{font-size:.6rem}.section-heading h2,.published-header h2{font-size:clamp(2.2rem,12vw,3.5rem)}.section-heading{margin-bottom:32px}.gallery-main{aspect-ratio:16/11;border-radius:20px}.gallery-strip{overflow-x:auto;display:flex;padding-bottom:4px;scroll-snap-type:x mandatory}.gallery-strip .image-button{min-width:92px;scroll-snap-align:start}.featured-copy{margin-top:4px}.system-groups{grid-template-columns:1fr}.published-header{margin-top:72px}.game-cards{grid-template-columns:1fr}.game-card-pawdoku{grid-column:auto;display:block}.game-card-pawdoku .game-art{aspect-ratio:16/10}.game-card p{min-height:0}.journey-quote{padding:22px 18px 22px 34px}.journey-image{min-height:380px}.prototype-panel{padding:19px}.prototype-list span{font-size:.76rem}.technical-primary{display:flex}.technical-primary .technical-visual{min-height:300px}.technical-primary .technical-body{padding:26px}.technical-body{padding:24px}.achievement-card{padding:16px}.achievement-copy{padding:15px}.achievement-image{min-height:260px}.timeline-item{grid-template-columns:42px 1fr;gap:14px}.timeline::before{left:20px}.timeline-marker{width:42px;height:42px}.timeline-content{padding:20px}.timeline-title{flex-direction:column;gap:3px}.timeline-with-image{grid-template-columns:1fr}.timeline-image{width:100%;aspect-ratio:16/8}.skills-grid{grid-template-columns:1fr}.skill-card{min-height:0}.about-copy h2{font-size:clamp(2.65rem,14vw,4rem)}.contact-card{padding:60px 20px;border-radius:28px}.contact-actions .button{width:100%}.footer-links{gap:14px}.lightbox{padding:20px}.lightbox-nav{display:none}.lightbox-close{top:12px;right:12px}
+  .shell{width:calc(100% - 24px);max-width:var(--max-width)}.section{padding:78px 0}.hero{padding-top:calc(var(--nav-height) + 54px)}.hero-summary{line-height:1.7}.hero-actions{align-items:stretch}.hero-actions .button{width:100%}.hero-actions .text-link{padding:8px 2px}.hero-visual{min-height:390px;overflow:hidden;border-radius:24px}.game-window{width:78%;height:220px;top:80px;right:3%}.code-window{width:58%;height:170px;left:1%;bottom:40px}.game-grid-mini{width:116px;height:116px}.code-lines{padding:13px;font-size:.6rem;gap:6px}.chip-unity{right:24px;top:42px}.chip-csharp{right:8px;bottom:70px}.orbit-one{width:300px;height:300px;right:10px;top:48px}.orbit-two{width:220px;height:220px;right:50px;top:89px}.stats{grid-template-columns:1fr 1fr}.stat{min-height:105px;padding:18px}.stat strong{font-size:2.25rem}.stat span{font-size:.6rem}.section-heading h2,.published-header h2{font-size:clamp(2.2rem,12vw,3.5rem)}.section-heading{margin-bottom:32px}.gallery-main{aspect-ratio:16/11;border-radius:20px}.gallery-strip{overflow-x:auto;display:flex;padding-bottom:4px;scroll-snap-type:x mandatory;overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}.gallery-strip::-webkit-scrollbar{display:none}.gallery-strip .image-button{min-width:92px;scroll-snap-align:start}.featured-copy{margin-top:4px}.system-groups{grid-template-columns:1fr}.published-header{margin-top:72px}.game-cards{grid-template-columns:1fr}.game-card-pawdoku{grid-column:auto;display:block}.game-card-pawdoku .game-art{aspect-ratio:16/10}.game-card p{min-height:0}.journey-quote{padding:22px 18px 22px 34px}.journey-image{min-height:380px}.prototype-panel{padding:19px}.prototype-list span{font-size:.76rem}.technical-primary{display:flex}.technical-primary .technical-visual{min-height:300px}.technical-primary .technical-body{padding:26px}.technical-body{padding:24px}.achievement-card{padding:16px}.achievement-copy{padding:15px}.achievement-image{min-height:260px}.timeline-item{grid-template-columns:42px 1fr;gap:14px}.timeline::before{left:20px}.timeline-marker{width:42px;height:42px}.timeline-content{padding:20px}.timeline-title{flex-direction:column;gap:3px}.timeline-with-image{grid-template-columns:1fr}.timeline-image{width:100%;aspect-ratio:16/8}.skills-grid{grid-template-columns:1fr}.skill-card{min-height:0}.about-copy h2{font-size:clamp(2.65rem,14vw,4rem)}.contact-card{padding:60px 20px;border-radius:28px}.contact-actions .button{width:100%}.footer-links{gap:14px}.lightbox{padding:20px}.lightbox-nav{display:none}.lightbox-close{top:12px;right:12px}
+}
+
+
+@media (max-width: 620px) {
+  body, main, header, footer, section { max-width: 100%; }
+  .ambient { display: none; }
+  .nav-menu { max-width: calc(100% - 32px); }
+  .hero-grid, .featured-layout, .journey-grid, .technical-grid, .about-grid { width: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
