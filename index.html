@@ -1,379 +1,331 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#07111f">
-  <meta name="description" content="Portfolio of Hussam Alkhatib, a Unity game developer and Computer Engineering student at JUST, showcasing published mobile games, gameplay projects, software, AI, and engineering work.">
-  <meta name="keywords" content="Hussam Alkhatib, Unity Game Developer, C#, Mobile Game Developer, Jordan, JUST, PawDoku, OrbiX, Risky Landing, Negative Zero Studios">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta name="description" content="Portfolio of Hussam Alkhatib — Unity game developer and Computer Engineering student at JUST. Published Android games, gameplay systems, prototypes, and engineering work.">
   <meta name="author" content="Hussam Alkhatib">
-  <link rel="canonical" href="https://2hik4.github.io/">
-
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Hussam Alkhatib | Unity Game Developer">
-  <meta property="og:description" content="Published mobile games, Unity prototypes, software, AI, robotics, and engineering work by Hussam Alkhatib.">
-  <meta property="og:url" content="https://2hik4.github.io/">
+  <meta property="og:title" content="Hussam Alkhatib — Unity Game Developer">
+  <meta property="og:description" content="Three shipped Android games, Unity gameplay work, prototypes, and engineering projects.">
   <meta property="og:image" content="https://2hik4.github.io/assets/images/social-preview.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Hussam Alkhatib | Unity Game Developer">
-  <meta name="twitter:description" content="Published mobile games, Unity prototypes, software, AI, robotics, and engineering work.">
-  <meta name="twitter:image" content="https://2hik4.github.io/assets/images/social-preview.png">
-
-  <title>Hussam Alkhatib | Unity Game Developer</title>
-  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <title>Hussam Alkhatib — Unity Game Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=7">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Hussam Alkhatib",
+    "jobTitle":"Unity Game Developer",
+    "url":"https://2hik4.github.io/",
+    "sameAs":["https://github.com/2HIK4","https://www.linkedin.com/in/hussam-alkhatib-dev","https://play.google.com/store/apps/developer?id=Negative+Zero+Studios"]
+  }
+  </script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
-  <div class="noise" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" id="siteHeader">
-    <nav class="nav shell" aria-label="Primary navigation">
-      <a class="brand" href="#home" aria-label="Hussam Alkhatib home">
-        <span class="brand-mark">H</span>
-        <span class="brand-text">Hussam<span class="accent-dot">.</span></span>
-      </a>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
-        <span></span><span></span>
-      </button>
-
-      <div class="nav-menu" id="navMenu">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#games" class="nav-link">Games</a>
-        <a href="#journey" class="nav-link">Journey</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#contact" class="nav-link">Contact</a>
-        <a href="#contact" class="button button-small nav-cta">Let's Talk</a>
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="Hussam Alkhatib home">HA<span>/</span></a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#work">work</a>
+        <a href="#lab">lab</a>
+        <a href="#experience">experience</a>
+        <a href="#about">about</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="plain-link" href="https://2hik4.github.io/assets/Hussam-Alkhatib-CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+        <a class="contact-chip" href="mailto:hussamalkhatib24@gmail.com">email me</a>
+        <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu"><span></span><span></span></button>
       </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#work">work</a><a href="#lab">lab</a><a href="#experience">experience</a><a href="#about">about</a><a href="#contact">contact</a>
     </nav>
   </header>
 
-  <main id="main-content">
-    <section class="hero section" id="home">
-      <div class="hero-grid shell">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="status-dot"></span> HELLO, I'M</div>
-          <h1>Hussam <span>Alkhatib</span></h1>
-          <p class="hero-role">Unity Game Developer</p>
-          <p class="hero-subrole">Computer Engineering Student <span>@ JUST</span></p>
-          <p class="hero-summary">I build mobile games, gameplay systems, and interactive experiences using Unity and C# — turning ideas from quick prototypes into published products.</p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#games">
-              Explore My Games
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <a class="button button-secondary" href="https://github.com/2HIK4" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.52 1.03 1.52 1.03.89 1.52 2.33 1.08 2.9.83.09-.64.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.84a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
-              View GitHub
-            </a>
-            <a class="text-link" href="https://www.linkedin.com/in/hussam-alkhatib-dev" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-          </div>
-
-          <a class="cv-link" id="cvDownload" href="assets/Hussam-Alkhatib-CV.pdf" download>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
-            Download CV
-          </a>
-        </div>
-
-        <div class="hero-visual reveal" aria-label="Abstract game development workspace visualization">
-          <div class="visual-orbit orbit-one"></div>
-          <div class="visual-orbit orbit-two"></div>
-          <div class="visual-grid"></div>
-
-          <article class="workspace-card game-window">
-            <div class="window-bar">
-              <div class="window-dots"><span></span><span></span><span></span></div>
-              <span>game_preview.exe</span>
-            </div>
-            <div class="game-stage">
-              <div class="game-grid-mini" aria-hidden="true">
-                <span></span><span></span><span class="active"></span><span></span>
-                <span></span><span class="pet">◆</span><span></span><span></span>
-                <span class="active"></span><span></span><span></span><span class="pet">◆</span>
-                <span></span><span></span><span class="active"></span><span></span>
-              </div>
-              <div class="game-hud"><span>LEVEL 24</span><span>♥ ♥ ♥</span></div>
-            </div>
-          </article>
-
-          <article class="workspace-card code-window">
-            <div class="window-bar"><span>PlayerController.cs</span><span class="code-lang">C#</span></div>
-            <div class="code-lines" aria-hidden="true">
-              <span><i class="kw">void</i> Update() {</span>
-              <span>&nbsp;&nbsp;<i class="fn">ReadInput</i>();</span>
-              <span>&nbsp;&nbsp;<i class="fn">MovePlayer</i>();</span>
-              <span>&nbsp;&nbsp;<i class="fn">UpdateState</i>();</span>
-              <span>}</span>
-            </div>
-          </article>
-
-          <div class="floating-chip chip-unity">UNITY</div>
-          <div class="floating-chip chip-csharp">C#</div>
-          <div class="floating-node node-a"></div>
-          <div class="floating-node node-b"></div>
-          <div class="floating-node node-c"></div>
+  <main id="main">
+    <section class="hero shell" id="top">
+      <div class="hero-main reveal">
+        <p class="kicker">Hussam Alkhatib · Unity / C#</p>
+        <h1>I build games.<br><span>I finish them.</span></h1>
+        <p class="hero-copy">Computer Engineering student at JUST focused on gameplay programming and mobile game development. I started with small Unity experiments and kept going until they became games people could actually install.</p>
+        <div class="hero-links">
+          <a class="button primary" href="#work">See the work <span>↓</span></a>
+          <a class="button text" href="https://github.com/2HIK4" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="button text" href="https://www.linkedin.com/in/hussam-alkhatib-dev" target="_blank" rel="noopener">LinkedIn ↗</a>
         </div>
       </div>
-      <a class="scroll-cue" href="#stats" aria-label="Scroll to achievements"><span>SCROLL</span><i></i></a>
+
+      <aside class="hero-proof reveal" aria-label="Portfolio quick facts">
+        <div class="proof-heading">release log</div>
+        <dl>
+          <div><dt>shipped</dt><dd>3 Android games</dd></div>
+          <div><dt>engine</dt><dd>Unity</dd></div>
+          <div><dt>language</dt><dd>C#</dd></div>
+          <div><dt>focus</dt><dd>Gameplay + mobile</dd></div>
+          <div><dt>based</dt><dd>Irbid, Jordan</dd></div>
+        </dl>
+        <p class="proof-note">The screenshots, builds, repositories, and store pages do the explaining here.</p>
+      </aside>
     </section>
 
-    <section class="stats-section" id="stats" aria-label="Quick achievements">
-      <div class="stats shell">
-        <article class="stat reveal"><strong data-count="3">3</strong><span>Published Games</span></article>
-        <article class="stat reveal"><strong data-count="250" data-suffix="+">250+</strong><span>Students Trained</span></article>
-        <article class="stat reveal"><strong>Dozens</strong><span>Unity Prototypes</span></article>
-        <article class="stat reveal"><strong>3rd</strong><span>TCRT24 Competition</span></article>
-      </div>
-    </section>
-
-    <section class="section featured-game" id="games">
-      <div class="shell">
-        <div class="section-heading reveal">
-          <div>
-            <span class="section-kicker">FEATURED PROJECT</span>
-            <h2>PawDoku <span>— Pet Logic Puzzles</span></h2>
-          </div>
-          <a class="button button-primary button-compact" href="https://play.google.com/store/apps/details?id=com.negzerodev.pawdoku" target="_blank" rel="noopener noreferrer">View on Google Play ↗</a>
-        </div>
-
-        <div class="featured-layout">
-          <div class="pawdoku-gallery reveal" data-gallery="pawdoku">
-            <button class="gallery-main image-button" data-lightbox-src="assets/games/pawdoku/screenshot-1.png" aria-label="Open PawDoku store showcase">
-              <img src="assets/games/pawdoku/screenshot-1.png" alt="PawDoku Google Play showcase with game screenshots" fetchpriority="high">
-              <span class="image-hint">Click to expand</span>
-            </button>
-            <div class="gallery-strip" role="list" aria-label="PawDoku screenshots">
-              <button class="image-button" role="listitem" data-lightbox-src="assets/games/pawdoku/screenshot-2.png" aria-label="Open PawDoku screenshot 1"><img src="assets/games/pawdoku/screenshot-2.png" alt="PawDoku promotional screenshot" loading="lazy"></button>
-              <button class="image-button" role="listitem" data-lightbox-src="assets/games/pawdoku/screenshot-3.png" aria-label="Open PawDoku screenshot 2"><img src="assets/games/pawdoku/screenshot-3.png" alt="PawDoku puzzle gameplay screenshot" loading="lazy"></button>
-              <button class="image-button" role="listitem" data-lightbox-src="assets/games/pawdoku/screenshot-4.png" aria-label="Open PawDoku screenshot 3"><img src="assets/games/pawdoku/screenshot-4.png" alt="PawDoku daily challenge screenshot" loading="lazy"></button>
-              <button class="image-button" role="listitem" data-lightbox-src="assets/games/pawdoku/screenshot-5.png" aria-label="Open PawDoku screenshot 4"><img src="assets/games/pawdoku/screenshot-5.png" alt="PawDoku pet collection screenshot" loading="lazy"></button>
-            </div>
-          </div>
-
-          <div class="featured-copy reveal">
-            <div class="project-topline">
-              <div class="project-icon"><img src="assets/games/pawdoku/cover.png" alt="PawDoku game cover" onerror="this.parentElement.classList.add('image-missing');this.remove()"></div>
-              <div><span class="muted">Negative Zero Studios</span><div class="tag-row"><span>Unity</span><span>C#</span><span>Android</span><span>Google Play</span></div></div>
-            </div>
-
-            <p class="project-lead">PawDoku is a mobile logic puzzle game built and published for Android using Unity and C#. It is my most complete game project and pushed me far beyond implementing only the core puzzle mechanic.</p>
-
-            <div class="system-groups">
-              <article class="system-card"><span class="system-index">01</span><h3>Gameplay</h3><ul><li>Puzzle Logic</li><li>Progression</li><li>Boosters</li><li>Daily Challenges</li></ul></article>
-              <article class="system-card"><span class="system-index">02</span><h3>Product Systems</h3><ul><li>Save System</li><li>Game Economy</li><li>Analytics</li><li>Notifications</li></ul></article>
-              <article class="system-card"><span class="system-index">03</span><h3>Mobile & Monetization</h3><ul><li>Ads & Rewarded Ads</li><li>In-App Purchases</li><li>Google Play Services</li><li>Player Feedback</li></ul></article>
-              <article class="system-card"><span class="system-index">04</span><h3>Production</h3><ul><li>Testing</li><li>Debugging</li><li>Optimization</li><li>Android Publishing</li></ul></article>
-            </div>
-          </div>
-        </div>
-
-        <div class="published-header reveal">
-          <div><span class="section-kicker">SHIPPED WORK</span><h2>Published Games</h2><p>Three mobile games developed and released on Google Play.</p></div>
-          <a href="https://play.google.com/store/apps/developer?id=Negative+Zero+Studios" target="_blank" rel="noopener noreferrer" class="text-link">Negative Zero Studios ↗</a>
-        </div>
-
-        <div class="game-cards">
-          <article class="game-card game-card-pawdoku reveal">
-            <a class="game-art image-button" href="https://play.google.com/store/apps/details?id=com.negzerodev.pawdoku" target="_blank" rel="noopener noreferrer" aria-label="Open PawDoku on Google Play">
-              <img src="assets/games/pawdoku/cover.png" alt="PawDoku game cover" loading="lazy">
-              <span class="store-badge">GOOGLE PLAY</span>
-            </a>
-            <div class="game-card-body"><div class="game-meta"><span>01</span><span>PUZZLE</span></div><h3>PawDoku</h3><p>A polished mobile logic puzzle game with progression, live systems, monetization, analytics, and publishing integrations.</p><div class="tag-row"><span>Unity</span><span>C#</span><span>Android</span></div><a class="card-link" href="https://play.google.com/store/apps/details?id=com.negzerodev.pawdoku" target="_blank" rel="noopener noreferrer">View game <span>↗</span></a></div>
-          </article>
-
-          <article class="game-card reveal">
-            <a class="game-art image-button" href="https://play.google.com/store/apps/details?id=com.orbix.hikdev" target="_blank" rel="noopener noreferrer" aria-label="Open OrbiX on Google Play">
-              <img src="assets/games/orbix/cover.png" alt="OrbiX game cover" loading="lazy">
-              <span class="store-badge">GOOGLE PLAY</span>
-            </a>
-            <div class="game-card-body"><div class="game-meta"><span>02</span><span>ARCADE</span></div><h3>OrbiX</h3><p>An arcade mobile game focused on responsive mechanics, movement, controls, scoring, and game feel.</p><div class="tag-row"><span>Unity</span><span>C#</span><span>Android</span></div><a class="card-link" href="https://play.google.com/store/apps/details?id=com.orbix.hikdev" target="_blank" rel="noopener noreferrer">View game <span>↗</span></a></div>
-          </article>
-
-          <article class="game-card reveal">
-            <a class="game-art image-button" href="https://play.google.com/store/apps/details?id=com.hikdev.riskylanding" target="_blank" rel="noopener noreferrer" aria-label="Open Risky Landing on Google Play">
-              <img src="assets/games/risky-landing/cover.png" alt="Risky Landing game cover" loading="lazy">
-              <span class="store-badge">GOOGLE PLAY</span>
-            </a>
-            <div class="game-card-body"><div class="game-meta"><span>03</span><span>ARCADE</span></div><h3>Risky Landing</h3><p>A mobile arcade game focused on timing, control, gameplay loops, feedback, balancing, and finishing a compact idea into a release.</p><div class="tag-row"><span>Unity</span><span>C#</span><span>Android</span></div><a class="card-link" href="https://play.google.com/store/apps/details?id=com.hikdev.riskylanding" target="_blank" rel="noopener noreferrer">View game <span>↗</span></a></div>
-          </article>
+    <section class="work-section" id="work">
+      <div class="shell section-intro reveal">
+        <div class="section-index">01</div>
+        <div>
+          <p class="kicker">Selected work</p>
+          <h2>The project that changed how I build games.</h2>
         </div>
       </div>
-    </section>
 
-    <section class="section journey-section" id="journey">
-      <div class="shell">
-        <div class="section-heading split-heading reveal">
-          <div><span class="section-kicker">THE WORK BEHIND THE WORK</span><h2>Beyond the Published Games</h2></div>
-          <p>Over the years I've built dozens of Unity prototypes, gameplay experiments, and small projects — using each one to test mechanics, architecture, UI, game feel, and new ideas.</p>
-        </div>
-
-        <blockquote class="journey-quote reveal">
-          <span>“</span>
-          <p>Building prototypes teaches you how to create mechanics.<br><strong>Finishing games teaches you how to create products.</strong></p>
-        </blockquote>
-
-        <div class="journey-grid">
-          <button class="journey-image image-button reveal" data-lightbox-src="assets/images/unity-projects.png" aria-label="Open Unity projects folder image">
-            <img src="assets/images/unity-projects.png" alt="Collection of Unity project and prototype folders built across several years" loading="lazy">
-            <span class="image-label"><b>Dozens of builds.</b> One long learning loop.</span>
+      <article class="featured-project shell reveal">
+        <div class="feature-media">
+          <button class="image-link" data-lightbox="https://2hik4.github.io/assets/games/pawdoku/screenshot-1.png" aria-label="Open PawDoku screenshot">
+            <img src="https://2hik4.github.io/assets/games/pawdoku/screenshot-1.png" alt="PawDoku Google Play store showcase" loading="eager">
+            <span>open image ↗</span>
           </button>
+        </div>
+        <div class="feature-copy">
+          <div class="project-meta"><span>01 / FEATURED</span><span>ANDROID · UNITY · C#</span></div>
+          <h3>PawDoku</h3>
+          <p class="project-subtitle">Pet Logic Puzzles</p>
+          <p>PawDoku started as a puzzle mechanic and became my first project where I had to think about the whole product: progression, saving, live systems, monetization, analytics, onboarding, edge cases, and publishing.</p>
 
-          <div class="prototype-panel reveal">
-            <div class="prototype-panel-head"><span>SELECTED EXPERIMENTS</span><span class="pulse"></span></div>
-            <div class="prototype-list">
-              <span>Card Defence <i>Prototype</i></span>
-              <span>ChopSprint <i>Prototype</i></span>
-              <span>Color Lane Rush <i>Experiment</i></span>
-              <span>Gravity Leap <i>Prototype</i></span>
-              <span>KitchenChaos <i>Experiment</i></span>
-              <span>Geometry Hero <i>Prototype</i></span>
-              <span>Swing Smash <i>Prototype</i></span>
-              <span>Word Master <i>Experiment</i></span>
-              <span>SmithStorm <i>Prototype</i></span>
-              <span>Next Jump <i>Experiment</i></span>
-            </div>
-            <p class="prototype-note">These are prototypes and gameplay experiments, not commercially released titles. Their purpose was to learn fast, test ideas, and improve the next build.</p>
+          <div class="owned-block">
+            <p class="mono-label">I built</p>
+            <ul>
+              <li>Puzzle rules, validation, lives and feedback</li>
+              <li>Progression, boosters, streaks and daily challenges</li>
+              <li>Local / cloud save flow and Google Play integration</li>
+              <li>Ads, rewarded ads, IAP, consent and remove-ads flow</li>
+              <li>Analytics, notifications, testing and Android release work</li>
+            </ul>
+          </div>
+
+          <div class="project-actions">
+            <a class="button primary" href="pawdoku.html">Read the case study <span>→</span></a>
+            <a class="button text" href="https://play.google.com/store/apps/details?id=com.negzerodev.pawdoku" target="_blank" rel="noopener">Google Play ↗</a>
           </div>
         </div>
+      </article>
+
+      <div class="filmstrip shell reveal" aria-label="PawDoku screenshots">
+        <button data-lightbox="https://2hik4.github.io/assets/games/pawdoku/screenshot-2.png"><img src="https://2hik4.github.io/assets/games/pawdoku/screenshot-2.png" alt="PawDoku promotional screenshot" loading="lazy"></button>
+        <button data-lightbox="https://2hik4.github.io/assets/games/pawdoku/screenshot-3.png"><img src="https://2hik4.github.io/assets/games/pawdoku/screenshot-3.png" alt="PawDoku puzzle gameplay screenshot" loading="lazy"></button>
+        <button data-lightbox="https://2hik4.github.io/assets/games/pawdoku/screenshot-4.png"><img src="https://2hik4.github.io/assets/games/pawdoku/screenshot-4.png" alt="PawDoku daily challenge screenshot" loading="lazy"></button>
+        <button data-lightbox="https://2hik4.github.io/assets/games/pawdoku/screenshot-5.png"><img src="https://2hik4.github.io/assets/games/pawdoku/screenshot-5.png" alt="PawDoku pet collection screenshot" loading="lazy"></button>
+      </div>
+
+      <div class="shell shipped-heading reveal">
+        <p class="kicker">Also shipped</p>
+        <h2>Small games. Real releases.</h2>
+      </div>
+
+      <div class="shell shipped-grid">
+        <article class="shipped-card reveal">
+          <a class="game-thumb" href="https://play.google.com/store/apps/details?id=com.orbix.hikdev" target="_blank" rel="noopener">
+            <img src="https://2hik4.github.io/assets/games/orbix/cover.png" alt="OrbiX game cover" loading="lazy">
+            <span>Google Play ↗</span>
+          </a>
+          <div class="card-topline"><span>02</span><span>ARCADE</span></div>
+          <h3>OrbiX</h3>
+          <p>A compact arcade game built around responsive movement, scoring, control feel, and a complete mobile release loop.</p>
+          <p class="stack">Unity / C# / Android</p>
+        </article>
+
+        <article class="shipped-card reveal">
+          <a class="game-thumb" href="https://play.google.com/store/apps/details?id=com.hikdev.riskylanding" target="_blank" rel="noopener">
+            <img src="https://2hik4.github.io/assets/games/risky-landing/cover.png" alt="Risky Landing game cover" loading="lazy">
+            <span>Google Play ↗</span>
+          </a>
+          <div class="card-topline"><span>03</span><span>ARCADE</span></div>
+          <h3>Risky Landing</h3>
+          <p>A timing-focused mobile game where the useful work was not just the mechanic, but tuning it until the loop felt finished.</p>
+          <p class="stack">Unity / C# / Android</p>
+        </article>
       </div>
     </section>
 
-    <section class="section technical-section" id="projects">
-      <div class="shell">
-        <div class="section-heading reveal"><div><span class="section-kicker">BEYOND GAME DEVELOPMENT</span><h2>Technical Projects</h2></div><p>Projects where I explored the fundamentals behind intelligent systems and software rather than only using high-level tools.</p></div>
+    <section class="lab-section" id="lab">
+      <div class="shell section-intro reveal">
+        <div class="section-index">02</div>
+        <div>
+          <p class="kicker">Game lab</p>
+          <h2>Most ideas do not need a store page.</h2>
+          <p class="intro-copy">I keep prototypes because they answer smaller questions: does this movement feel good, can this mechanic carry a loop, is this system worth taking further? The strongest ones will get their own screenshots here as I finish the portfolio pass.</p>
+        </div>
+      </div>
 
-        <div class="technical-grid">
-          <article class="technical-card technical-primary reveal">
-            <div class="technical-visual neural-visual" aria-hidden="true">
-              <div class="neural-grid" id="neuralGrid"></div>
-              <div class="ai-number">8</div>
-              <div class="prediction-pill"><span></span>Prediction: <b>8</b></div>
-            </div>
-            <div class="technical-body"><span class="project-number">PROJECT / 01</span><h3>Handwritten Digit Recognition Neural Network</h3><p>A neural network developed and trained from the ground up in Python to recognize handwritten digits from images. The core network logic was implemented manually to better understand how learning systems work internally.</p><div class="feature-list"><span>Image input</span><span>Training</span><span>Prediction</span><span>Model save/load</span><span>Classification</span></div><div class="tag-row"><span>Python</span><span>AI</span><span>Machine Learning</span><span>Neural Networks</span></div><a class="button button-secondary button-compact" href="https://github.com/2HIK4/Number-Prediction" target="_blank" rel="noopener noreferrer">View Source on GitHub ↗</a></div>
-          </article>
-
-          <article class="technical-card reveal">
-            <div class="technical-visual equation-visual" aria-hidden="true"><span>2x + 4 = 12</span><i></i><strong>x = 4</strong></div>
-            <div class="technical-body"><span class="project-number">PROJECT / 02</span><h3>Simple Equation Solver AI</h3><p>A small experimental AI project created to explore how learned models can work with simple mathematical equations, with the underlying logic implemented manually for learning purposes.</p><div class="tag-row"><span>Python</span><span>AI</span><span>Neural Networks</span></div></div>
-          </article>
+      <div class="shell lab-layout reveal">
+        <figure class="lab-photo">
+          <button class="image-link" data-lightbox="https://2hik4.github.io/assets/images/unity-projects.png" aria-label="Open Unity projects image">
+            <img src="https://2hik4.github.io/assets/images/unity-projects.png" alt="Collection of Unity project folders" loading="lazy">
+            <span>years of Unity folders ↗</span>
+          </button>
+          <figcaption>Not every folder is portfolio material. The point is the repetition: build, test, throw away, keep the lesson.</figcaption>
+        </figure>
+        <div class="experiment-list" aria-label="Selected Unity experiments">
+          <div><span>01</span><strong>Next Jump</strong><em>prototype</em></div>
+          <div><span>02</span><strong>Orbits Around Me</strong><em>prototype</em></div>
+          <div><span>03</span><strong>Card Defence</strong><em>prototype</em></div>
+          <div><span>04</span><strong>ChopSprint</strong><em>prototype</em></div>
+          <div><span>05</span><strong>Color Lane Rush</strong><em>experiment</em></div>
+          <div><span>06</span><strong>Gravity Leap</strong><em>prototype</em></div>
+          <div><span>07</span><strong>KitchenChaos</strong><em>experiment</em></div>
+          <div><span>08</span><strong>Swing Smash</strong><em>prototype</em></div>
+          <div><span>09</span><strong>Word Master</strong><em>experiment</em></div>
+          <div><span>10</span><strong>SmithStorm</strong><em>prototype</em></div>
         </div>
       </div>
     </section>
 
-    <section class="section engineering-section">
-      <div class="shell">
-        <div class="achievement-card reveal">
-          <div class="achievement-copy">
-            <span class="section-kicker">ENGINEERING & ROBOTICS</span>
-            <div class="medal-mark">03</div>
-            <h2>3rd Place — TCRT24<br>Line Follower Competition</h2>
-            <p>Competed as part of a two-person team in a line follower robotics competition, working on the robot and achieving 3rd place. The result included a 150 JOD prize, but the real value was the engineering, tuning, teamwork, and competition experience behind it.</p>
-            <div class="tag-row"><span>Robotics</span><span>Embedded Systems</span><span>Teamwork</span><span>Competition</span></div>
+    <section class="technical-section">
+      <div class="shell section-intro reveal">
+        <div class="section-index">03</div>
+        <div>
+          <p class="kicker">Beyond games</p>
+          <h2>Things I built to understand the layer underneath.</h2>
+        </div>
+      </div>
+
+      <div class="shell technical-list">
+        <article class="technical-item reveal">
+          <div class="tech-number">A</div>
+          <div class="tech-title">
+            <p class="kicker">Python / neural networks</p>
+            <h3>Handwritten Digit Recognition</h3>
           </div>
-          <button class="achievement-image image-button" data-lightbox-src="assets/images/tcrt24.jpg" aria-label="Open TCRT24 competition image"><img src="assets/images/tcrt24.jpg" alt="TCRT24 line follower competition third-place team photo" loading="lazy"></button>
-        </div>
+          <p>A neural network implemented from the ground up to learn what training, prediction, weights, model persistence, and classification actually look like without hiding everything behind a high-level API.</p>
+          <a href="https://github.com/2HIK4/Number-Prediction" target="_blank" rel="noopener">source ↗</a>
+        </article>
+        <article class="technical-item reveal">
+          <div class="tech-number">B</div>
+          <div class="tech-title">
+            <p class="kicker">Python / experiment</p>
+            <h3>Simple Equation Solver AI</h3>
+          </div>
+          <p>A small learning project for experimenting with how a model can represent and solve simple mathematical relationships.</p>
+          <span class="muted-link">learning project</span>
+        </article>
+        <article class="technical-item reveal">
+          <div class="tech-number">C</div>
+          <div class="tech-title">
+            <p class="kicker">Embedded / robotics</p>
+            <h3>3rd Place — TCRT24</h3>
+          </div>
+          <p>Built and tuned a line-follower robot as part of a two-person team, finishing third in competition. The useful part was the debugging loop: hardware, sensors, timing, tuning, repeat.</p>
+          <button class="text-button" data-lightbox="https://2hik4.github.io/assets/images/tcrt24.jpg">photo ↗</button>
+        </article>
       </div>
     </section>
 
-    <section class="section experience-section" id="experience">
-      <div class="shell">
-        <div class="section-heading reveal"><div><span class="section-kicker">EXPERIENCE & LEADERSHIP</span><h2>Building, Teaching, Leading</h2></div><p>Game development is the main direction. The rest of my experience adds communication, engineering, and leadership around it.</p></div>
-
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-marker"><span>01</span></div>
-            <div class="timeline-date">2021 — PRESENT</div>
-            <div class="timeline-content"><div class="timeline-title"><h3>Independent Unity Game Developer</h3><span>Self-employed · Remote</span></div><p>Independently developing games with Unity and C#, progressing from small prototypes and gameplay experiments to finished Android releases on Google Play.</p><div class="timeline-highlights"><span>3 published games</span><span>Dozens of prototypes</span><span>Gameplay programming</span><span>UI systems</span><span>Testing & debugging</span><span>Mobile publishing</span></div></div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-marker"><span>02</span></div>
-            <div class="timeline-date">IEEE · JUST</div>
-            <div class="timeline-content timeline-with-image"><div><div class="timeline-title"><h3>Sponsorship Leader</h3><span>IEEE JUST Student Branch</span></div><p>Supported sponsorship outreach and external partner communication, helping prepare sponsorship proposals, coordinate with teams, follow up with potential partners, and support student events.</p><div class="timeline-highlights"><span>Leadership</span><span>Communication</span><span>Sponsorship Outreach</span><span>Coordination</span><span>Event Support</span></div></div><button class="timeline-image image-button" data-lightbox-src="assets/images/ieee-sponsor.jpg" aria-label="Open IEEE Sponsorship Leader image"><img src="assets/images/ieee-sponsor.jpg" alt="IEEE JUST Student Branch Sponsorship Leader announcement for Hussam Alkhatib" loading="lazy"></button></div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-marker"><span>03</span></div>
-            <div class="timeline-date">IEEE · JUST</div>
-            <div class="timeline-content timeline-with-image"><div><div class="timeline-title"><h3>Arduino Instructor</h3><span>IEEE JUST Student Branch</span></div><p>Delivered a structured 5-day Arduino course for 25+ students, with the same group attending throughout the course and building skills progressively through hands-on practice.</p><div class="timeline-highlights"><span>5-day program</span><span>25+ students</span><span>Arduino</span><span>Embedded Systems</span><span>Hands-on learning</span></div></div><button class="timeline-image image-button" data-lightbox-src="assets/images/ieee-training.jpg" aria-label="Open IEEE training image"><img src="assets/images/ieee-training.jpg" alt="IEEE Arduino training session led by Hussam Alkhatib" loading="lazy"></button></div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-marker"><span>04</span></div>
-            <div class="timeline-date">CTC · JUST</div>
-            <div class="timeline-content timeline-with-image"><div><div class="timeline-title"><h3>Arduino Instructor</h3><span>Computing Technology Club</span></div><p>Delivered hands-on Arduino training across multiple sessions, training more than <strong>250 unique students</strong>, with approximately 30 different participants per day.</p><div class="timeline-highlights"><span>Arduino</span><span>Programming</span><span>Electronics</span><span>Sensors</span><span>Embedded Systems</span><span>Troubleshooting</span></div></div><button class="timeline-image image-button" data-lightbox-src="assets/images/ctc-training.jpg" aria-label="Open CTC training image"><img src="assets/images/ctc-training.jpg" alt="CTC Arduino training session with students" loading="lazy"></button></div>
-          </article>
+    <section class="experience-section" id="experience">
+      <div class="shell section-intro reveal">
+        <div class="section-index">04</div>
+        <div>
+          <p class="kicker">Experience</p>
+          <h2>Building is the main thread. Teaching made me better at explaining it.</h2>
         </div>
+      </div>
+
+      <div class="shell timeline">
+        <article class="timeline-row reveal">
+          <div class="timeline-date">2021 — now</div>
+          <div class="timeline-main">
+            <h3>Independent Unity Game Developer</h3>
+            <p>Built dozens of prototypes and shipped three Android games while learning the less visible parts of game development: debugging, UI, release preparation, analytics, monetization and product iteration.</p>
+            <p class="stack">Unity / C# / Android / Google Play</p>
+          </div>
+          <div class="timeline-side big-stat"><strong>3</strong><span>games shipped</span></div>
+        </article>
+
+        <article class="timeline-row with-image reveal">
+          <div class="timeline-date">CTC · JUST</div>
+          <div class="timeline-main">
+            <h3>Arduino Instructor</h3>
+            <p>Delivered hands-on Arduino training across multiple sessions for more than 250 different students, usually around 30 participants per day.</p>
+            <p class="stack">Arduino / electronics / sensors / troubleshooting</p>
+          </div>
+          <button class="timeline-photo" data-lightbox="assets/images/ctc-team.jpg" aria-label="Open CTC team photo">
+            <img src="assets/images/ctc-team.jpg" alt="Computing Technology Club team photo" loading="lazy">
+          </button>
+        </article>
+
+        <article class="timeline-row with-image reveal">
+          <div class="timeline-date">IEEE · JUST</div>
+          <div class="timeline-main">
+            <h3>Arduino Instructor</h3>
+            <p>Ran a structured five-day Arduino course for 25+ students, with the same group returning each day and building on the previous session.</p>
+            <p class="stack">Arduino / embedded systems / hands-on teaching</p>
+          </div>
+          <button class="timeline-photo" data-lightbox="https://2hik4.github.io/assets/images/ieee-training.jpg" aria-label="Open IEEE training photo">
+            <img src="https://2hik4.github.io/assets/images/ieee-training.jpg" alt="IEEE Arduino training session" loading="lazy">
+          </button>
+        </article>
+
+        <article class="timeline-row reveal">
+          <div class="timeline-date">IEEE · JUST</div>
+          <div class="timeline-main">
+            <h3>Sponsorship Leader</h3>
+            <p>Supported sponsor outreach, proposals, follow-up, partner communication and event coordination for the IEEE JUST Student Branch.</p>
+            <p class="stack">Outreach / communication / coordination</p>
+          </div>
+          <div class="timeline-side"><span class="plain-badge">leadership</span></div>
+        </article>
       </div>
     </section>
 
-    <section class="section skills-section">
-      <div class="shell">
-        <div class="section-heading reveal"><div><span class="section-kicker">TOOLKIT</span><h2>Skills & Technologies</h2></div><p>Grouped by where I use them — no arbitrary proficiency percentages.</p></div>
-        <div class="skills-grid">
-          <article class="skill-card reveal"><span class="skill-icon">▦</span><h3>Game Development</h3><div><span>Unity</span><span>C#</span><span>Mobile Game Development</span><span>Game Programming</span><span>Gameplay Systems</span></div></article>
-          <article class="skill-card reveal"><span class="skill-icon">&lt;/&gt;</span><h3>Programming</h3><div><span>C#</span><span>C++</span><span>Python</span><span>JavaScript</span></div></article>
-          <article class="skill-card reveal"><span class="skill-icon">⌘</span><h3>Tools</h3><div><span>Git</span><span>GitHub</span><span>Visual Studio</span></div></article>
-          <article class="skill-card reveal"><span class="skill-icon">AI</span><h3>Artificial Intelligence</h3><div><span>AI</span><span>Machine Learning</span><span>Neural Networks</span></div></article>
-          <article class="skill-card reveal"><span class="skill-icon">⚙</span><h3>Engineering</h3><div><span>Arduino</span><span>Embedded Systems</span><span>Robotics</span></div></article>
-          <article class="skill-card reveal"><span class="skill-icon">WEB</span><h3>Web</h3><div><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section about-section" id="about">
+    <section class="about-section" id="about">
       <div class="shell about-grid">
-        <div class="about-label reveal"><span class="section-kicker">ABOUT ME</span><span class="large-index">HA</span></div>
-        <div class="about-copy reveal"><h2>I learn best by <span>building.</span></h2><p>I'm a Computer Engineering student at Jordan University of Science and Technology (JUST), with my main focus currently on Unity and mobile game development.</p><p>That build-first approach has taken me from small gameplay experiments to publishing three Android games, while also exploring AI, embedded systems, robotics, and software development.</p><p>I enjoy solving technical problems, experimenting with game mechanics, and turning ideas into complete playable experiences.</p><div class="about-links"><a href="https://github.com/2HIK4" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/hussam-alkhatib-dev" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://play.google.com/store/apps/developer?id=Negative+Zero+Studios" target="_blank" rel="noopener noreferrer">Google Play ↗</a></div></div>
+        <div class="about-title reveal">
+          <p class="kicker">05 / About</p>
+          <h2>I learn best by making something that can fail.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>I'm a Computer Engineering student at Jordan University of Science and Technology. I got into game development by building small Unity projects, then kept pushing the same process further: one mechanic, one system, one complete game.</p>
+          <p>Publishing changed what I pay attention to. A game is not finished when the core mechanic works. It is finished when saving survives an edge case, the UI works on a phone, the build behaves outside the editor, and somebody else can download it without me standing next to them.</p>
+          <p>Game development is where I want to work. The AI, embedded, robotics and teaching projects are useful because they made me more comfortable debugging systems and explaining technical decisions.</p>
+          <div class="toolkit">
+            <div><span>game</span><strong>Unity · C# · mobile game development · gameplay systems</strong></div>
+            <div><span>code</span><strong>C# · C++ · Python · JavaScript</strong></div>
+            <div><span>tools</span><strong>Git · GitHub · Visual Studio</strong></div>
+            <div><span>engineering</span><strong>Arduino · embedded systems · robotics</strong></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="shell contact-card reveal">
-        <div class="contact-glow" aria-hidden="true"></div>
-        <span class="section-kicker">CONTACT</span>
-        <h2>Let's Build <span>Something.</span></h2>
-        <p>I'm currently interested in game-development opportunities, collaborations, and technically challenging projects.</p>
-        <div class="contact-actions">
-          <a class="button button-primary" href="mailto:hussamalkhatib24@gmail.com">Email Me <span>↗</span></a>
-          <a class="button button-secondary" href="https://www.linkedin.com/in/hussam-alkhatib-dev" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a>
-          <a class="button button-secondary" href="https://github.com/2HIK4" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+    <section class="contact-section" id="contact">
+      <div class="shell contact-grid reveal">
+        <div>
+          <p class="kicker">Available for opportunities</p>
+          <h2>If the work involves Unity, gameplay or C#, I want to hear about it.</h2>
         </div>
-        <div class="contact-details">
-          <a href="mailto:hussamalkhatib24@gmail.com"><span>Email</span>hussamalkhatib24@gmail.com</a>
-          <!-- PHONE: Remove this entire <a> element if you do not want your phone number public. -->
-          <a href="tel:+962798098346"><span>Phone</span>+962 79 809 8346</a>
-          <div><span>Location</span>Irbid, Jordan</div>
+        <div class="contact-links">
+          <a href="mailto:hussamalkhatib24@gmail.com"><span>email</span><strong>hussamalkhatib24@gmail.com</strong><b>↗</b></a>
+          <a href="https://www.linkedin.com/in/hussam-alkhatib-dev" target="_blank" rel="noopener"><span>linkedin</span><strong>/in/hussam-alkhatib-dev</strong><b>↗</b></a>
+          <a href="https://github.com/2HIK4" target="_blank" rel="noopener"><span>github</span><strong>@2HIK4</strong><b>↗</b></a>
+          <a href="https://play.google.com/store/apps/developer?id=Negative+Zero+Studios" target="_blank" rel="noopener"><span>google play</span><strong>Negative Zero Studios</strong><b>↗</b></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="shell footer-grid">
-      <div><a class="brand" href="#home"><span class="brand-mark">H</span><span class="brand-text">Hussam<span class="accent-dot">.</span></span></a><p>Unity Game Developer & Computer Engineering Student</p></div>
-      <div class="footer-links"><a href="https://www.linkedin.com/in/hussam-alkhatib-dev" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/2HIK4" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://play.google.com/store/apps/developer?id=Negative+Zero+Studios" target="_blank" rel="noopener noreferrer">Google Play</a></div>
-      <div class="footer-meta">© <span id="currentYear"></span> Hussam Alkhatib<br><span>Built with HTML, CSS & JavaScript.</span></div>
-    </div>
+  <footer class="site-footer">
+    <div class="shell"><span>Hussam Alkhatib</span><span>Unity Game Developer · Irbid, Jordan</span><span>© <span id="year"></span></span></div>
   </footer>
 
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close image preview">×</button>
-    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
-    <figure><img id="lightboxImage" src="" alt=""><figcaption id="lightboxCaption"></figcaption></figure>
-    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
-  </div>
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button>
+    <img id="lightboxImage" src="" alt="Expanded project image">
+  </dialog>
 
-  <script src="script.js?v=7"></script>
+  <script src="script.js"></script>
 </body>
 </html>

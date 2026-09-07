@@ -1,99 +1,30 @@
-# Hussam Alkhatib — Portfolio
+# Hussam Alkhatib — portfolio redesign
 
-Static GitHub Pages portfolio built with **HTML, CSS and vanilla JavaScript**.
-
-## Live URL
-
-After pushing these files to the root of the `2HIK4.github.io` repository:
-
-`https://2hik4.github.io/`
+A static HTML/CSS/JavaScript portfolio designed around real work, case-study depth, and recruiter readability rather than decorative developer-template UI.
 
 ## Files
 
-```text
-/
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-└── assets/
-    ├── Hussam-Alkhatib-CV.pdf        # add this when your CV is ready
-    ├── icons/
-    │   └── favicon.svg
-    ├── games/
-    │   ├── pawdoku/
-    │   │   ├── cover.png
-    │   │   ├── screenshot-1.png
-    │   │   ├── screenshot-2.png
-    │   │   ├── screenshot-3.png
-    │   │   ├── screenshot-4.png
-    │   │   └── screenshot-5.png
-    │   ├── orbix/
-    │   │   ├── cover.png
-    │   │   ├── screenshot-1.png
-    │   │   └── screenshot-2.png
-    │   └── risky-landing/
-    │       ├── cover.png
-    │       ├── screenshot-1.png
-    │       └── screenshot-2.png
-    └── images/
-        ├── unity-projects.png
-        ├── tcrt24.jpg
-        ├── ctc-training.jpg
-        ├── ieee-training.jpg
-        ├── social-preview.png
-        └── linkedin-banner-reference.png
-```
+- `index.html` — portfolio homepage
+- `pawdoku.html` — dedicated PawDoku case study
+- `style.css` — all desktop/mobile styling
+- `script.js` — navigation, reveal motion and image lightbox
+- `assets/images/ctc-team.jpg` — the new CTC photo supplied in this chat
 
-## Images already included
+## Existing assets
 
-The first version uses images/screenshots supplied in the conversation for:
+The design intentionally reuses the game and project images that are already live in the current `2HIK4.github.io` repository. The HTML currently references those existing images through `https://2hik4.github.io/assets/...`, so this package can be previewed without copying the full old asset tree.
 
-- PawDoku
-- OrbiX
-- Risky Landing
-- Unity project/prototype folders
-- TCRT24 award
-- CTC training
-- IEEE Arduino training
+When you are ready to deploy, keep the existing `assets/` folder in the repository and add `assets/images/ctc-team.jpg` from this package.
 
-You can replace any image later without changing the layout, as long as you keep the same filename.
+## Deploy
 
-## Images worth replacing later
+1. Back up the current repository.
+2. Replace root `index.html`, `style.css`, and `script.js` with the files in this package.
+3. Add `pawdoku.html` to the repository root.
+4. Upload `assets/images/ctc-team.jpg`.
+5. Keep the rest of the existing `assets/` directory unchanged.
+6. Commit to `main`; GitHub Pages should redeploy automatically.
 
-For the strongest final version, replace the temporary/cropped game assets with original high-resolution files:
+## Next portfolio pass
 
-- `assets/games/orbix/cover.png` — original OrbiX key art
-- `assets/games/orbix/screenshot-1.png` and `screenshot-2.png` — clean gameplay screenshots
-- `assets/games/risky-landing/cover.png` — original Risky Landing key art
-- `assets/games/risky-landing/screenshot-1.png` and `screenshot-2.png` — clean gameplay screenshots
-- `assets/images/tcrt24.jpg` — original award photo rather than a crop from LinkedIn
-- `assets/images/ctc-training.jpg` — original training photo
-- `assets/images/ieee-training.jpg` — original training photo
-- `assets/Hussam-Alkhatib-CV.pdf` — final CV
-
-## Contact details
-
-The phone number is marked with an HTML comment in `index.html`. To remove it from the public website, delete the `<a href="tel:...">...</a>` element directly beneath the `PHONE:` comment.
-
-## Publish on GitHub Pages
-
-1. Open your `2HIK4.github.io` repository.
-2. Upload/replace the files in the repository root with this project.
-3. Commit the changes to `main`.
-4. Open **Settings → Pages**.
-5. Select **Deploy from a branch → main → /(root)** if it is not already selected.
-6. Visit `https://2hik4.github.io/` after deployment finishes.
-
-No npm, build step, backend, or framework is required.
-
-
-## v6 update
-- Added the IEEE Sponsorship Leader image.
-- Swapped the Sponsorship Leader and CTC Arduino Instructor timeline positions.
-- Includes all prior v5 layout/mobile fixes.
-
-
-## v7 mobile card fix
-- PawDoku now uses the exact same published-game image ratio/behavior as OrbiX and Risky Landing on phones.
-- Updated social preview image and cache version.
+The `Game lab` section intentionally uses the existing Unity-project-folder image for now. When the prototype audit is finished, replace that section with 6–10 real gameplay screenshots/GIFs and a one-line note about what each prototype tested.
