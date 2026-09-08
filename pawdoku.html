@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PawDoku case study — Hussam Alkhatib</title>
+<meta name="description" content="How PawDoku, a mobile logic puzzle built in Unity, went from a working mechanic to a published Android game — gameplay systems, product systems, and release work.">
+<meta name="theme-color" content="#090D12">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="PawDoku case study — Hussam Alkhatib">
+<meta property="og:description" content="How PawDoku went from a puzzle mechanic to a published Android game.">
+<meta property="og:image" content="https://2hik4.github.io/assets/images/social-preview.jpg">
+<meta property="og:url" content="https://2hik4.github.io/pawdoku.html">
+
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="canonical" href="https://2hik4.github.io/pawdoku.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>[data-reveal], .section__head, .lab-card, .beyond-card, .timeline__item, .skills__group { opacity: 1 !important; transform: none !important; }</style></noscript>
+<link rel="stylesheet" href="css/case-study.css">
+</head>
+<body class="has-fixed-header">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__row">
+    <a class="wordmark" href="index.html">
+<img
+  class="wordmark__mark"
+  src="assets/images/favicon.svg"
+  alt=""
+  aria-hidden="true"
+>
+      <span>Hussam Alkhatib</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="index.html#work">← Back to portfolio</a>
+      <a class="link-ext" href="https://play.google.com/store/apps/details?id=com.negzerodev.pawdoku">Google Play</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="cs-hero wrap wrap--narrow" data-reveal>
+    <p class="cs-kicker"><span class="status-dot"></span> CASE STUDY · SOLO UNITY PROJECT</p>
+    <h1>PawDoku <span class="accent-text">/ shipped</span></h1>
+    <p class="cs-dek">
+      A mobile logic puzzle that forced me to stop thinking only about
+      mechanics and start thinking about the whole product.
+    </p>
+
+    <dl class="ledger cs-ledger">
+      <div class="ledger__item"><dt>Role</dt><dd>Solo developer</dd></div>
+      <div class="ledger__item"><dt>Engine</dt><dd>Unity</dd></div>
+      <div class="ledger__item"><dt>Language</dt><dd>C#</dd></div>
+      <div class="ledger__item"><dt>Platform</dt><dd>Android</dd></div>
+      <div class="ledger__item"><dt>Status</dt><dd>Published</dd></div>
+    </dl>
+  </section>
+
+  <figure class="cs-hero-shot wrap">
+    <button data-lightbox data-full="assets/images/games/pawdoku/screenshot-1.jpg" data-caption="PawDoku — store showcase">
+      <img src="assets/images/games/pawdoku/screenshot-1.jpg" alt="PawDoku store showcase screenshot" width="720" height="1280">
+    </button>
+  </figure>
+
+  <section class="section">
+    <div class="wrap wrap--narrow">
+      <h2>What the project became</h2>
+      <p>
+        PawDoku is a pet-themed logic puzzle where each row, column and
+        region follows placement rules. The first version was about
+        getting the puzzle to work. The finished project had to handle
+        much more: mistakes, lives, coins, progression, boosters, daily
+        content, persistence, player feedback, monetisation, store
+        services and release behaviour.
+      </p>
+      <p>
+        That shift is the main reason I use PawDoku as my primary
+        portfolio project. It shows the difference between building a
+        mechanic and owning a game long enough to actually ship it.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>The gameplay layer</h2>
+        <p class="section__intro">Four systems the puzzle itself is built from.</p>
+      </div>
+
+      <div class="cs-system-grid">
+        <div class="cs-system">
+          <h3>Puzzle validation</h3>
+          <p>Placement rules, invalid-move detection, and clear feedback
+            when a move is wrong.</p>
+        </div>
+        <div class="cs-system">
+          <h3>Lives &amp; economy</h3>
+          <p>Wrong moves cost lives and coins, tying moment-to-moment
+            decisions to the wider game loop.</p>
+        </div>
+        <div class="cs-system">
+          <h3>Boosters</h3>
+          <p>Hint, undo, retry and streak-related tools built into
+            gameplay rather than bolted on afterward.</p>
+        </div>
+        <div class="cs-system">
+          <h3>Daily challenge</h3>
+          <p>A separate, repeatable challenge flow with its own lives,
+            streaks, and reward logic.</p>
+        </div>
+      </div>
+
+      <div class="feature__strip cs-shot-strip">
+        <button data-lightbox data-full="assets/images/games/pawdoku/screenshot-2.jpg" data-caption="PawDoku — promotional shot">
+          <img src="assets/images/games/pawdoku/screenshot-2.jpg" alt="PawDoku promotional screenshot" loading="lazy" width="720" height="1280">
+        </button>
+        <button data-lightbox data-full="assets/images/games/pawdoku/screenshot-3.jpg" data-caption="PawDoku — puzzle board">
+          <img src="assets/images/games/pawdoku/screenshot-3.jpg" alt="PawDoku puzzle board screenshot" loading="lazy" width="720" height="1280">
+        </button>
+        <button data-lightbox data-full="assets/images/games/pawdoku/screenshot-4.jpg" data-caption="PawDoku — daily challenge">
+          <img src="assets/images/games/pawdoku/screenshot-4.jpg" alt="PawDoku daily challenge screenshot" loading="lazy" width="720" height="1280">
+        </button>
+        <button data-lightbox data-full="assets/images/games/pawdoku/screenshot-5.jpg" data-caption="PawDoku — pet collection">
+          <img src="assets/images/games/pawdoku/screenshot-5.jpg" alt="PawDoku pet collection screenshot" loading="lazy" width="720" height="1280">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap wrap--narrow">
+      <div class="section__head">
+        <h2>The parts players only notice when they break</h2>
+        <p class="section__intro">
+          Two of these turned into real engineering problems, not just
+          feature checkboxes.
+        </p>
+      </div>
+
+      <div class="pcsr">
+        <h3>Cloud saves without silently overwriting progress</h3>
+        <dl>
+          <div><dt>Problem</dt><dd>A returning player's progress has to
+            survive across devices and sessions, tied to Google Play
+            sign-in.</dd></div>
+          <div><dt>Constraint</dt><dd>Local and cloud data can disagree —
+            overwriting either one without asking loses real progress.</dd></div>
+          <div><dt>Solution</dt><dd>I added a conflict prompt so a
+            returning player decides whether to keep the cloud save or
+            the local one, instead of the game choosing silently.</dd></div>
+          <div><dt>Result</dt><dd>Save state that survives reinstalls and
+            device switches without quietly erasing anyone's progress.</dd></div>
+        </dl>
+      </div>
+
+      <div class="pcsr">
+        <h3>Ads that don't wreck the first session</h3>
+        <dl>
+          <div><dt>Problem</dt><dd>Banner, interstitial and rewarded ads
+            all need to coexist without punishing a brand-new player.</dd></div>
+          <div><dt>Constraint</dt><dd>A remove-ads purchase still has to
+            leave rewarded ads available, since players often want those
+            on purpose.</dd></div>
+          <div><dt>Solution</dt><dd>Each ad format is gated separately and
+            onboarding-aware, with purchase logic that only turns off the
+            formats a player actually paid to remove.</dd></div>
+          <div><dt>Result</dt><dd>Monetisation that doesn't get in the way
+            of learning the game, and doesn't strip away rewards players
+            still want after paying to remove ads.</dd></div>
+        </dl>
+      </div>
+
+      <div class="cs-system-grid cs-system-grid--pair">
+        <div class="cs-system">
+          <h3>IAP &amp; consent</h3>
+          <p>Coin packs, booster packs, purchase handling, first-purchase
+            feedback and consent flow, treated as product systems with
+            real failure states rather than plain button callbacks.</p>
+        </div>
+        <div class="cs-system">
+          <h3>Analytics &amp; notifications</h3>
+          <p>Level starts, completions, failures, claims, purchases and ad
+            outcomes are all instrumented so behaviour can be understood
+            after release. Notifications support daily and
+            inactivity-return loops.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="wrap wrap--narrow">
+      <h2>Getting it out of the editor</h2>
+      <p>
+        Shipping exposed a different category of problems: safe areas,
+        device layouts, SDK behaviour, mobile lifecycle cases, store
+        requirements, consent, build configuration, debugging
+        release-only issues, and making sure the tutorial can't leave a
+        player stuck in an impossible state.
+      </p>
+      <p>
+        I handled the Android release process and the Google Play
+        integrations myself. That work is less visible in a trailer, but
+        it's the part of PawDoku that most changed how I approach later
+        projects.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap wrap--narrow">
+      <h2>What I learned</h2>
+      <p>
+        PawDoku made me a lot less impressed by a mechanic that works
+        once. I now look for restart behaviour, persistence, failure
+        recovery, onboarding, device constraints, and what happens after
+        the hundredth play session — because those are the things that
+        decide whether a system is actually finished.
+      </p>
+
+      <div class="cs-footer-links">
+        <a class="link-ext" href="https://play.google.com/store/apps/details?id=com.negzerodev.pawdoku">View on Google Play</a>
+        <a class="link-arrow" href="index.html#work">Back to the rest of the work</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__row">
+    <p>Hussam Alkhatib — PawDoku case study</p>
+    <p>&copy; <span data-year></span></p>
+  </div>
+</footer>
+
+<div class="lightbox" data-lightbox-root hidden>
+  <button class="lightbox__close" data-lightbox-close aria-label="Close image">&times;</button>
+  <figure>
+    <img data-lightbox-img src="" alt="">
+    <figcaption data-lightbox-caption></figcaption>
+  </figure>
+</div>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+<script src="js/main.js"></script>
+</body>
+</html>

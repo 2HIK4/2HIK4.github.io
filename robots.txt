@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://2hik4.github.io/sitemap.xml

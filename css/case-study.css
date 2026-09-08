@@ -1,0 +1,51 @@
+/* PawDoku case study — uses the main portfolio design system. */
+
+.cs-hero { position: relative; padding-top: clamp(5rem, 9vw, 8rem); padding-bottom: 3.2rem; }
+.cs-kicker { display: inline-flex; align-items: center; gap: .6rem; color: var(--mint); font: 500 .72rem var(--mono); letter-spacing: .1em; margin-bottom: 1rem; }
+.cs-hero h1 { font-size: clamp(3.8rem, 2rem + 6vw, 7.5rem); line-height: .9; letter-spacing: -.075em; font-weight: 600; }
+.cs-hero h1 .accent-text { display: block; font-size: .28em; letter-spacing: .01em; margin-top: .65rem; font-family: var(--mono); text-transform: uppercase; }
+.cs-dek { max-width: 52ch; margin-top: 1.5rem; color: var(--muted); font-size: clamp(1.05rem, .96rem + .3vw, 1.2rem); }
+.cs-ledger { grid-template-columns: repeat(5, 1fr); margin-top: 2.6rem; }
+.cs-ledger .ledger__item dd { color: var(--text-soft); font: 500 .9rem var(--display); }
+
+.cs-hero-shot { position: relative; margin-bottom: clamp(5rem, 9vw, 8rem); }
+.cs-hero-shot::before { content: ""; position: absolute; width: 420px; height: 420px; border-radius: 50%; left: 50%; top: 50%; transform: translate(-50%,-50%); background: rgba(124,243,197,.07); filter: blur(90px); }
+.cs-hero-shot button { position: relative; display: block; max-width: 420px; margin-inline: auto; padding: 0; overflow: hidden; border: 1px solid var(--line-strong); border-radius: 32px; background: #070A0E; box-shadow: 0 32px 90px rgba(0,0,0,.48); }
+.cs-hero-shot img { width: 100%; transition: transform .55s ease; }
+.cs-hero-shot button:hover img { transform: scale(1.018); }
+
+.cs-system-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; }
+.cs-system-grid--pair { grid-template-columns: repeat(2, 1fr); margin-top: 2rem; }
+.cs-system { min-height: 200px; padding: 1.3rem; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.015); }
+.cs-system h3 { font-size: 1.15rem; letter-spacing: -.025em; }
+.cs-system p { color: var(--muted); margin-top: .6rem; font-size: .9rem; }
+.cs-shot-strip { margin-top: 2rem; grid-template-columns: repeat(4, 1fr); }
+.cs-shot-strip button { border-radius: 16px; }
+
+.pcsr { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius-md); background: linear-gradient(145deg, rgba(255,255,255,.018), rgba(255,255,255,.006)); padding: clamp(1.3rem, 3vw, 2rem); margin-bottom: 1rem; }
+.pcsr::before { content: ""; position: absolute; left: 0; top: 0; width: 3px; height: 100%; background: linear-gradient(var(--mint), transparent); }
+.pcsr h3 { font-size: clamp(1.4rem, 1.2rem + .8vw, 2rem); letter-spacing: -.035em; margin-bottom: 1.2rem; }
+.pcsr dl { display: grid; gap: .75rem; }
+.pcsr dl div { display: grid; grid-template-columns: 8.5rem 1fr; gap: 1rem; padding-top: .75rem; border-top: 1px solid var(--line); }
+.pcsr dt { color: var(--mint); font: 500 .68rem var(--mono); text-transform: uppercase; letter-spacing: .06em; }
+.pcsr dd { margin: 0; color: var(--text-soft); font-size: .92rem; }
+.cs-footer-links { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem; }
+
+/* Case-study body copy */
+.cs-hero + .cs-hero-shot + .section .wrap--narrow p,
+main > .section > .wrap--narrow > p { color: var(--text-soft); margin-top: 1rem; }
+main > .section > .wrap--narrow > h2 { font-size: clamp(2.2rem, 1.4rem + 2.4vw, 3.7rem); letter-spacing: -.05em; line-height: 1; margin-bottom: 1.4rem; }
+
+@media (max-width: 820px) {
+  .cs-ledger { grid-template-columns: repeat(2, 1fr); }
+  .cs-ledger .ledger__item:nth-child(3), .cs-ledger .ledger__item:nth-child(5) { border-left: 0; border-top: 1px solid var(--line); }
+  .cs-ledger .ledger__item:nth-child(4) { border-top: 1px solid var(--line); }
+  .cs-system-grid, .cs-system-grid--pair { grid-template-columns: repeat(2, 1fr); }
+  .pcsr dl div { grid-template-columns: 1fr; gap: .25rem; }
+}
+@media (max-width: 560px) {
+  .cs-hero { padding-top: 4rem; }
+  .cs-hero h1 { font-size: clamp(3.5rem, 18vw, 5.2rem); }
+  .cs-system-grid, .cs-system-grid--pair, .cs-shot-strip { grid-template-columns: repeat(2, 1fr); }
+  .cs-system { min-height: 170px; padding: 1rem; }
+}
